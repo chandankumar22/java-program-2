@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class question4 {
+public class Question4 {
     public static void main(String[]args){
          System.out.println("      KILOMETERS TO MILES CONVERTOR      ");
          System.out.println("      -----------------------------      ");

@@ -6,14 +6,12 @@ public class Question2 {
         int n = sc.nextInt();
         int count = 0;
         for(int i=1; i>=1; i++){
-            if(n%2!=0 && n%5!=0 && n%3!=0){
+            if((n%2==0 && n%5==0 && n%3==0) || (n%2==0 && n%3==0 && n%5!=0) || (n%3==0 && n%5==0 && n%2!=0) || (n%2==0 && n%5==0 && n%3!=0) || (n%2==0 && n%3!=0 && n%5!=0) || (n%3==0 && n%2!=0 && n%5!=0) || (n%5==0 && n%2!=0 && n%3!=0) || (n%2!=0 && n%5!=0 && n%3!=0)){
+                if(n%2!=0 && n%5!=0 && n%3!=0){
                 count = count+1;
                 n = n-1;
-                    if(n%2==0 && n%5!=0 && n%3!=0){
-                        count = count+1;
-                        n = n/2;
-                    }else{
-                          for(int j=0; j>=1; j++){
+                }else{
+                        for(int j=0; j>=1; j++){
                                 if(n%5==0 && n%2!=0 && n%3!=0){
                                     n = n/5;
                                     count = count+1;
@@ -39,20 +37,21 @@ public class Question2 {
 
                                 if(n%2!=0 && n%3!=0 && n%5!=0) break;
             
-                            }
                         }
+                     }
+                        
 
                 if(n==1){
                     count = count+1;
                     n = n-1;
-                    System.out.print("Minimum steps involve in this is"+count);
+                    System.out.print("Minimum steps involve in this is "+count);
                 }
                
-                    
-            }
              if(n==0) break;       
-        }
+            }
 
-        sc.close();
-    }
+        
+        }
+    sc.close();
+}
 }

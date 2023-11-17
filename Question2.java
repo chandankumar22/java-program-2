@@ -26,6 +26,15 @@ public class Question2 {
                                 }else if(n%3==0 && n%2==0 && n%5==0){
                                     n = n/5;
                                     count = count+1;
+                                }else if(n%2==0 && n%3==0 && n%5!=0){
+                                    n = n/3;
+                                    count = count+1;
+                                }else if(n%2==0 && n%5==0 && n%3!=0){
+                                    n = n/5;
+                                    count = count+1;
+                                }else if(n%3==0 && n%5==0 && n%2!=0){
+                                    n = n/5;
+                                    count = count+1;
                                 }
 
                                 if(n%2!=0 && n%3!=0 && n%5!=0) break;

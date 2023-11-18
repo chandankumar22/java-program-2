@@ -1,5 +1,10 @@
 import java.util.*;
 public class Question5 {
+    /*tbtk ye pattern smjh kya h or dekh series print kraa skta kya?
+    n=8
+    1 3 2 4 5 7 6 8
+    n=7
+    1 3 2 4 5 7 6*/
     //chandan bhaiya question
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

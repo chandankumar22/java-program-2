@@ -13,5 +13,6 @@ public class FibonacciSeriesQues {
             b = c;
         }
          System.out.print(a);
+         sc.close();
     }
 }

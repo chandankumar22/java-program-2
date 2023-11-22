@@ -8,26 +8,20 @@ public class Question20 {
         int a = 0;
         
         while(n!=0){
-        for(int i=n; i>=1; i--){
-            int b = 0;
-            for(int j=n; j>=i; j--){
-                if(j==n){
-                    a = a+1;
-                    System.out.print(a+" ");
-                }if(j==n-1){
-                    b = j+a;
-                    System.out.print(b+" ");
-                }if(j<n-1){
-                    b = b+j;
-                    System.out.print(b+" ");
+            for(int i=1; i<=n; i++){
+                int diff = 0, gap = n-1, number = i;
+                for(int j=1; j<=i; j++){
+                    System.out.print(number+ " ");
+                    diff+=gap;
+                    number+=diff;
+                    gap=-1;
                 }
-            }
                 System.out.println();
-        }
+            }
         System.out.print("Enter Number:");
         n = sc.nextInt();
         a = 0;
     }
-        sc.close();
+    sc.close();
     }
 }
